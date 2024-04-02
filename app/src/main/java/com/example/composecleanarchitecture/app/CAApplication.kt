@@ -8,7 +8,7 @@ import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 import org.koin.core.logger.Level
 
-class CAApplicationClass : Application() {
+class CAApplication : Application() {
 
     override fun onCreate() {
         //initStrictMode()
@@ -38,7 +38,7 @@ class CAApplicationClass : Application() {
     private fun initKoin() {
         startKoin {
             androidLogger(Level.ERROR)
-            androidContext(this@CAApplicationClass)
+            androidContext(this@CAApplication)
             modules(provideDependency())
         }
     }

@@ -8,7 +8,5 @@ import com.example.composecleanarchitecture.presentation.theme.LocalAppNavContro
 import org.koin.dsl.module
 
 val navigationDependency = module {
-    factory<NavController> { (navController: NavHostController) -> navController }
     single<CANavigation> { CANavigationImpl() }
-
 }
