@@ -10,6 +10,5 @@ import org.koin.dsl.module
 val navigationDependency = module {
     factory<NavController> { (navController: NavHostController) -> navController }
     single<CANavigation> { CANavigationImpl() }
-    single<NavController> { LocalAppNavControllerProvider }
 
 }
