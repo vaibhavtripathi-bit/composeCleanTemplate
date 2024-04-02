@@ -1,4 +1,4 @@
-package com.example.composecleanacrhitecture.ui.theme
+package com.example.composecleanacrhitecture.presentation.base.theme
 
 import android.app.Activity
 import android.os.Build

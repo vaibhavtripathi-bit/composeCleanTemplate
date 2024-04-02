@@ -1,4 +1,4 @@
-package com.example.composecleanacrhitecture.ui.theme
+package com.example.composecleanacrhitecture.presentation.base.theme
 
 import androidx.compose.ui.graphics.Color
 
