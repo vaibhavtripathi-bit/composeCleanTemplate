@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.composecleanacrhitecture"
+    namespace = "com.example.composecleanarchitecture"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.composecleanacrhitecture"
+        applicationId = "com.example.composecleanarchitecture"
         minSdk = 30
         targetSdk = 34
         versionCode = 1
