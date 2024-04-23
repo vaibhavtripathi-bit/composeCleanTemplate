@@ -10,23 +10,24 @@ import com.example.composecleanarchitecture.presentation.navigation.Screen
 import com.example.composecleanarchitecture.presentation.theme.LocalNavigationProvider
 
 @Composable
-fun DetailScreen(
+fun SettingScreen(
     modifier: Modifier = Modifier,
     name: String = ""
 ) {
     val navigator = LocalNavigationProvider.current
+
     Text(
         text = "Hello $name!",
         modifier = modifier.clickable {
-            navigator.navigateTo(Screen.ScreenHome, null)
+             navigator.navigateTo(Screen.ScreenDetail, null)
         }
     )
 }
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun SettingScreenPreview() {
     ComposeCleanAcrhitectureTheme {
-        DetailScreen(name = "Android")
+        SettingScreen(name = "Android")
     }
 }
